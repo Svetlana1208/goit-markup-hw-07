@@ -1,0 +1,38 @@
+/* Клиенты*/
+
+.clients {
+    margin-top: 50px;
+    display: flex;
+    padding: 0;
+    list-style: none;
+
+
+        &__item {
+            display: flex;
+            width: 170px;
+            height: 92px;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid var(--social-color);
+            fill: var(--social-color);
+            background-color: var(--primary-white-color);
+            border-radius: 4px;
+
+            transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        
+                &:hover,
+                &:focus {
+                    fill: var(--accent-color);
+                    border: 1px solid var(--accent-color);
+                }
+        }
+
+        &__list:not(:first-child) {
+            margin-left: 30px;
+        }
+
+        &__icon {
+            width: 106px;
+            height: 60px;
+        }
+}
